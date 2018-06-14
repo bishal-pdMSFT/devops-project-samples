@@ -13,9 +13,6 @@
     },
     "sku": {
       "value": "GEN-UNIQUE"
-    },
-    "skuCode": {
-      "value": "GEN-UNIQUE"
     }
   }
 }
