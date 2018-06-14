@@ -13,11 +13,7 @@
         },
         "sku": {
             "type": "string",
-            "defaultValue": "Standard"
-        },
-        "skuCode": {
-            "type": "string",
-            "defaultValue": "S1"
+            "defaultValue": "Standard S1"
         }
     },
     "resources": [
@@ -68,7 +64,7 @@
             "type": "Microsoft.Web/serverfarms",
             "sku": {
                 "Tier": "[parameters('sku')]",
-                "Name": "[parameters('skuCode')]"
+                "Name": "[concat(substring(parameters('sku'), 0, 1), '1')]"
             },
             "name": "[parameters('hostingPlanName')]",
             "apiVersion": "2015-08-01",
